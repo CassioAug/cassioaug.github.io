@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página -->
+    <title>Portfólio de Cássio</title>
+    <!-- Link para o arquivo CSS de estilo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho com o título e menu de navegação -->
+    <header>
+        <h1 id="inicio">CÁSSIO AUGUSTO</h1>
+        <nav>
+            <ul>
+                <!-- Links internos para navegação facilitada na página, sem precisar redirecionar para páginas distintas -->
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal dividido em seções -->
+    <main>
+        <!-- Seção de Introdução, com informações básicas -->
+        <section id="introducao">
+            <h2>Meu Portfólio Pessoal</h2>
+            <p>Bem-vindo ao meu site pessoal onde compartilho minha jornada profissional e educacional, bem como os projetos em que trabalhei no ramo do desenvolvimento de sistemas.</p>
+        </section>
+
+        <!-- Seção Sobre Mim, com minha introdução e informações pessoais -->
+        <section id="sobreMim">
+            <h2>Quem Sou Eu?</h2>
+            <!-- Utilização de 'strong' e 'em' para destaques com propósitos semântiocos que podem ser reconhecidos por leitores de tela -->
+            <p>Meu nome é <strong>Cássio Augusto Couto Soares</strong>, sou um afortunado pai de uma linda criança,
+                chamada Luna, e marido de uma grande companheira e amiga, chamada Roberta. Sou técnico de informática
+                desde 2012 e advogado desde 2015. Sou também apaixonado por tecnologia e tenho grande interesse no
+                desenvolvimento de sistemas, <strong>razão pela qual estou atualmente cursando <em>"Análise e
+                        Desenvolvimento de Sistemas"</em> na Uninter</strong>. Meus grandes hobbies são ler livros de
+                fantasia, ficção científica e filosofia, jogar videogames e
+                me informar sobre o que tem acontecido no mundo da tecnologia.</p>
+            <!-- Imagem pessoal com minha foto e de minha família -->
+            <img src="/imagens/familia.png" alt="Foto da família" class="foto">
+        </section>
+
+        <!-- Seção Formação, utilizando lista para melhor visualização -->
+        <section id="formacao">
+            <h2>Minha Formação Acadêmica</h2>
+            <ul>
+                <li>Sou formado em <strong>Técnico em Informática</strong> pelo Colégio Cotemig.</li>
+                <li>Sou graduado em <strong>Direito</strong> pelo Centro Universitário Newton Paiva.</li>
+                <li>Possuo certificado de <strong>inglês avançado</strong>, pelo curso de <em>"General English"</em> na
+                    British Study Centres School of English, da cidade de Brighton, Inglaterra.</li>
+                <li>Falo, leio e escrevo <strong>inglês</strong> e <strong>português</strong> fluentemente.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Portfólio, com links direcionando para os meus projetos -->
+        <section id="portfolio">
+            <h2>Meus Projetos</h2>
+            <p>Aqui estão alguns dos projetos que desenvolvi:</p>
+            <ul>
+                <li><a href="https://cassioaug.github.io/EcoSurvey-Form/" target="_blank">Projeto 1:</a> Um formulario,
+                    feito em HTML e CSS, para uma pesquisa sobre desenvolvimento sustentável.</li>
+                <li><a href="https://www.figma.com/proto/kaIWYFshgRkHYjqaXEQGEw/fdsis-ap6?node-id=0-1&t=I7UpihA927SdXGtd-1"
+                        target="_blank">Projeto 2:</a> Um projeto feito no Figma, um
+                    design de um protótipo de um aplicativo móvel para adoção de pets.</li>
+                <li><a href="/imagens/mer_clinca_medica.png" target="_blank">Projeto 3:</a> Um Modelo
+                    Entidade-Relacionamento (MER) para um banco de dados.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Contato, com um formulário para ser submetido -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <!-- Imagem para ilustração, com descrição em 'alt' para melhor acessibilidade -->
+                <img src="/imagens/envelope.png" alt="Ícone de Envelope" class="icone">
+                
+                <!-- Botão para submeter o formulário-->
+                <input type="submit" value="Enviar">
+            </form>
+            <!-- Link interno para voltar ao topo da página -->
+            <a href="#inicio" class="voltar">Voltar ao Início</a>
+        </section>
+    </main>
+
+    <!-- Rodapé do site, indicando os direitos autorais sobre o conteúdo do site -->
+    <footer>
+        <p>&copy; 2024, Cássio Augusto Couto Soares. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

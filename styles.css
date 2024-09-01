@@ -1,0 +1,176 @@
+/* Resetando margens e paddings para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Alternativas para font-family, caso algum dispositivo não tenha suporte a fonte de preferencia */
+    line-height: 1.6;  /* Espaçamento vertical entre as linhas de texto, para melhor visibilidade */
+    background-color: #f0f4f8; /* cor do fundo */
+    color: #333; /*cor da fonte */
+    padding: 20px; /* Espaçamento interno entre o conteúdo e as bordas do navegador, para melhor visibilidade */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 20px 0; /* Espaçamento interno vertical e horizontal, respectivamente */
+    text-align: center; /* Alinhando o texto do cabeçalho no centro */
+    border-radius: 8px; /* Arredondamento das bordas, por escolha de design */
+    margin-bottom: 30px; /* Margem inferior para separar o conteúdo */
+}
+
+/* Estilo do título principal */
+header h1 { /* Aplica o estilo apenas aos elementos h1 que estão dentro de um header */
+    margin-bottom: 10px;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores visuais da lista */
+    display: flex; /* habilita um contêiner flexível por meio de 'flexbox', para um layout bem alinhado */
+    justify-content: center;
+    gap: 100px; /* Espaçamento entre os itens do menu */
+}
+
+/* Estilo dos links/botões do menu de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado padrão dos links, por escolha de design */
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave para as propriedades background color e color */
+    border-radius: 4px;
+}
+
+/* Estilo dos links/botões do menu de navegação, ao passar o mouse, por escolha de design */
+nav ul li a:hover {
+    background-color: #fff;
+    color: #4A90E2;
+}
+
+/* Estilo das seções */
+main section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor da seção. Os valores são: horizontal, vertical, desfoque e cor, respectivamente */
+    list-style: disc inside; /* Define o estilo da lista, respeitando os limites da seção. */
+}
+
+/* Estilo dos títulos das seções */
+main h2 {
+    margin-bottom: 15px;
+    color: #4A90E2;
+}
+
+/* Estilo dos links dos projetos */
+section#portfolio ul li a {
+    color: #4A90E2;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Estilo dos links dos projetos, ao passar o mouse */
+section#portfolio ul li a:hover {
+    color: #2C3E50;
+}
+
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos do formulário, empilhados verticalmente */
+    gap: 15px; /* Espaçamento entre os elementos do formulário */
+}
+
+/* Estilo dos labels do formulário */
+form label {
+    font-weight: bold;
+}
+
+/* Estilo dos campos de texto do formulário, para melhor visualização */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Permite que a área de texto seja redimensionada na direção vertical */
+    font-size: 1em; /* Tamanho da fonte consistente com o restante da página */
+}
+
+/* Estilo do botão de envio */
+form input[type="submit"] {
+    width: 150px; /* Largura fixa para o botão */
+    padding: 10px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; /* Alinha o botão à esquerda */
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão, ao passar o mouse */
+form input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Estilo do link "Voltar ao Início" */
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Estilo do link "Voltar ao Início", ao passar o mouse */
+.voltar:hover {
+    color: #2C3E50;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 40px;
+}
+
+/* Estilo da foto pessoal */
+.foto {
+    width: 100%;
+    max-width: 400px; /* Largura máxima da imagem */
+    height: auto; /* Altura proporcional à largura, preservando a proporção original */
+    border-radius: 10px;
+    margin: 20px 0;
+    display: block; /* Define a imagem como um elemento de bloco, para que fique devidamente ajustada */
+}
+
+/* Estilo para ícone ao lado do texto de contato */
+.icone {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+/* Melhorando a responsividade em dispositivos móveis, usando media query */
+@media (max-width: 768px) { /* Estilo é ativado só quando a largura da tela é de 768 pixels ou menos */
+    nav ul {
+        flex-direction: column; /* Redefine a direção dos botões da lista de navegação para uma coluna vertical */ 
+        gap: 15px;
+    }
+
+    form input[type="submit"] {
+        width: 100%; /* Redefine o botão de envio para que ocupe a largura da tela */ 
+    }
+}
