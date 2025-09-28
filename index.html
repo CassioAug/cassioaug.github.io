@@ -4,106 +4,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Título da página -->
-    <title>Portfólio de Cássio</title>
-    <!-- Link para o arquivo CSS de estilo -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Cássio Augusto - Advogado & Desenvolvedor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <!-- Cabeçalho com o título e menu de navegação -->
-    <header>
-        <h1 id="inicio">CÁSSIO AUGUSTO</h1>
-        <nav>
-            <ul>
-                <!-- Links internos para navegação facilitada na página, sem precisar redirecionar para páginas distintas -->
-                <li><a href="#sobreMim">Sobre Mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<body data-bs-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Cássio Augusto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-i18n="home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" data-i18n="skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" data-i18n="portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-i18n="contact">Contato</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-flex">
+                    <div class="dropdown me-2">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="languageDropdown"
+                            data-bs-toggle="dropdown">
+                            <i class="fas fa-globe me-1"></i> <span id="currentLanguage">PT</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item language-option" href="#" data-lang="pt">Português</a></li>
+                            <li><a class="dropdown-item language-option" href="#" data-lang="en">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline-light btn-sm" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Conteúdo principal dividido em seções -->
-    <main>
-        <!-- Seção de Introdução, com informações básicas -->
-        <section id="introducao">
-            <h2>Meu Portfólio Pessoal</h2>
-            <p>Bem-vindo ao meu site pessoal onde compartilho minha jornada profissional e educacional, bem como os projetos em que trabalhei no ramo do desenvolvimento de sistemas.</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3" data-i18n="heroTitle">Advogado & Desenvolvedor de Sistemas</h1>
+                    <p class="lead mb-4" data-i18n="heroDescription">Combinando expertise jurídica com tecnologia para
+                        oferecer soluções inovadoras e eficientes aos meus clientes.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4" data-i18n="contactMe">Entre em
+                            Contato</a>
+                        <a href="#portfolio" class="btn btn-outline-primary btn-lg px-4" data-i18n="viewPortfolio">Ver
+                            Portfólio</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="profile-image-container mx-auto">
+                        <img src="imagens/foto-perfil.jpg" alt="Cássio Augusto" class="profile-image img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Sobre Mim, com minha introdução e informações pessoais -->
-        <section id="sobreMim">
-            <h2>Quem Sou Eu?</h2>
-            <!-- Utilização de 'strong' e 'em' para destaques com propósitos semântiocos que podem ser reconhecidos por leitores de tela -->
-            <p>Meu nome é <strong>Cássio Augusto Couto Soares</strong>, sou um afortunado pai de uma linda criança,
-                chamada Luna, e marido de uma grande companheira e amiga, chamada Roberta. Sou técnico de informática
-                desde 2012 e advogado desde 2015. Sou também apaixonado por tecnologia e tenho grande interesse no
-                desenvolvimento de sistemas, <strong>razão pela qual estou atualmente cursando <em>"Análise e
-                        Desenvolvimento de Sistemas"</em> na Uninter</strong>. Meus grandes hobbies são ler livros de
-                fantasia, ficção científica e filosofia, jogar videogames e
-                me informar sobre o que tem acontecido no mundo da tecnologia.</p>
-            <!-- Imagem pessoal com minha foto e de minha família -->
-            <img src="/imagens/familia.png" alt="Foto da família" class="foto">
-        </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4" data-i18n="aboutTitle">Sobre Mim</h2>
+                    <p class="text-muted" data-i18n="aboutDescription">Advogado e desenvolvedor de sistemas com
+                        experiência em ambas as áreas, buscando integrar tecnologia e direito para criar soluções
+                        eficientes.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle p-3 me-3">
+                                    <i class="fas fa-graduation-cap fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="educationTitle">Formação Acadêmica</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <strong data-i18n="degree1">Análise e Desenvolvimento de Sistemas</strong>
+                                    <p class="text-muted small mb-0" data-i18n="degree1Desc">Centro Universitário
+                                        Internacional - UNINTER (Cursando)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong data-i18n="degree2">Direito</strong>
+                                    <p class="text-muted small mb-0" data-i18n="degree2Desc">Centro Universitário Newton
+                                        Paiva</p>
+                                </li>
+                                <li>
+                                    <strong data-i18n="degree3">Técnico em Informática</strong>
+                                    <p class="text-muted small mb-0" data-i18n="degree3Desc">Colégio Cotemig</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle p-3 me-3">
+                                    <i class="fas fa-briefcase fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="experienceTitle">Experiência Profissional</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <strong data-i18n="job1">Advogado Autônomo</strong>
+                                    <p class="text-muted small mb-0" data-i18n="job1Desc">Atuação em diversas áreas do
+                                        direito, com foco em soluções personalizadas</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong data-i18n="job2">Técnico de Informática</strong>
+                                    <p class="text-muted small mb-0" data-i18n="job2Desc">Suporte técnico, manutenção de
+                                        sistemas e infraestrutura de TI</p>
+                                </li>
+                                <li>
+                                    <strong data-i18n="job3">Desenvolvedor de Sistemas</strong>
+                                    <p class="text-muted small mb-0" data-i18n="job3Desc">Desenvolvimento de aplicações
+                                        web e mobile</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Formação, utilizando lista para melhor visualização -->
-        <section id="formacao">
-            <h2>Minha Formação Acadêmica</h2>
-            <ul>
-                <li>Sou formado em <strong>Técnico em Informática</strong> pelo Colégio Cotemig.</li>
-                <li>Sou graduado em <strong>Direito</strong> pelo Centro Universitário Newton Paiva.</li>
-                <li>Possuo certificado de <strong>inglês avançado</strong>, pelo curso de <em>"General English"</em> na
-                    British Study Centres School of English, da cidade de Brighton, Inglaterra.</li>
-                <li>Falo, leio e escrevo <strong>inglês</strong> e <strong>português</strong> fluentemente.</li>
-            </ul>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4" data-i18n="skillsTitle">Minhas Habilidades</h2>
+                    <p class="text-muted" data-i18n="skillsDescription">Combinando conhecimentos jurídicos e
+                        tecnológicos para oferecer soluções completas e inovadoras.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle p-3 me-3">
+                                    <i class="fas fa-scale-balanced fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="legalSkills">Habilidades Jurídicas</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2" data-i18n="legalSkill1">• Direito Civil e Contratual</li>
+                                <li class="mb-2" data-i18n="legalSkill2">• Direito do Consumidor</li>
+                                <li class="mb-2" data-i18n="legalSkill3">• Direito Digital e Proteção de Dados</li>
+                                <li class="mb-2" data-i18n="legalSkill4">• Consultoria Jurídica Empresarial</li>
+                                <li data-i18n="legalSkill5">• Elaboração de Contratos e Documentos Legais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle p-3 me-3">
+                                    <i class="fas fa-code fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="techSkills">Habilidades Técnicas</h5>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2" data-i18n="techSkill1">• HTML, CSS, JavaScript</li>
+                                <li class="mb-2" data-i18n="techSkill2">• Bootstrap e Design Responsivo</li>
+                                <li class="mb-2" data-i18n="techSkill3">• Desenvolvimento Front-end</li>
+                                <li class="mb-2" data-i18n="techSkill4">• Git e Controle de Versão</li>
+                                <li data-i18n="techSkill5">• Análise e Modelagem de Sistemas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle p-3 me-3">
+                                    <i class="fas fa-lightbulb fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="integrationTitle">Integração Direito & Tecnologia
+                                </h5>
+                            </div>
+                            <p data-i18n="integrationDescription">Minha abordagem única combina conhecimentos jurídicos
+                                profundos com expertise em tecnologia para oferecer soluções completas. Desenvolvo
+                                sistemas que atendem às necessidades legais específicas de empresas e profissionais,
+                                criando ferramentas que otimizam processos jurídicos e garantem conformidade com a
+                                legislação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Portfólio, com links direcionando para os meus projetos -->
-        <section id="portfolio">
-            <h2>Meus Projetos</h2>
-            <p>Aqui estão alguns dos projetos que desenvolvi:</p>
-            <ul>
-                <li><a href="https://cassioaug.github.io/EcoSurvey-Form/" target="_blank">Projeto 1:</a> Um formulario,
-                    feito em HTML e CSS, para uma pesquisa sobre desenvolvimento sustentável.</li>
-                <li><a href="https://www.figma.com/proto/kaIWYFshgRkHYjqaXEQGEw/fdsis-ap6?node-id=0-1&t=I7UpihA927SdXGtd-1"
-                        target="_blank">Projeto 2:</a> Um projeto feito no Figma, um
-                    design de um protótipo de um aplicativo móvel para adoção de pets.</li>
-                <li><a href="/imagens/mer_clinca_medica.png" target="_blank">Projeto 3:</a> Um Modelo
-                    Entidade-Relacionamento (MER) para um banco de dados.</li>
-            </ul>
-        </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4" data-i18n="portfolioTitle">Portfólio</h2>
+                    <p class="text-muted" data-i18n="portfolioDescription">Alguns dos projetos que desenvolvi,
+                        demonstrando a integração entre direito e tecnologia.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm portfolio-card">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/1a3a5f/FFFFFF?text=LegalTech+App"
+                                class="card-img-top" alt="LegalTech App">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title" data-i18n="project1Title">Sistema de Gestão Jurídica</h5>
+                            <p class="card-text text-muted" data-i18n="project1Description">Aplicação web para gestão de
+                                processos jurídicos, prazos e documentos.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary" data-i18n="project1Tech">HTML, CSS, JavaScript</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary" data-i18n="viewProject">Ver
+                                    Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm portfolio-card">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/1a3a5f/FFFFFF?text=Contract+Generator"
+                                class="card-img-top" alt="Contract Generator">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title" data-i18n="project2Title">Gerador de Contratos Inteligente</h5>
+                            <p class="card-text text-muted" data-i18n="project2Description">Ferramenta para criação
+                                automatizada de contratos personalizados.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary" data-i18n="project2Tech">JavaScript, Bootstrap</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary" data-i18n="viewProject">Ver
+                                    Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm portfolio-card">
+                        <div class="card-img-container">
+                            <img src="https://via.placeholder.com/400x250/1a3a5f/FFFFFF?text=Legal+Compliance"
+                                class="card-img-top" alt="Legal Compliance">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title" data-i18n="project3Title">Sistema de Conformidade Legal</h5>
+                            <p class="card-text text-muted" data-i18n="project3Description">Plataforma para verificação
+                                de conformidade com a LGPD e outras leis.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary" data-i18n="project3Tech">HTML, CSS, JavaScript</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary" data-i18n="viewProject">Ver
+                                    Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Seção Contato, com um formulário para ser submetido -->
-        <section id="contato">
-            <h2>Entre em Contato</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4" data-i18n="contactTitle">Entre em Contato</h2>
+                    <p class="text-muted" data-i18n="contactDescription">Estou disponível para novos projetos e
+                        oportunidades. Entre em contato para conversarmos!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label" data-i18n="formName">Nome</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label" data-i18n="formEmail">E-mail</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label" data-i18n="formSubject">Assunto</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label" data-i18n="formMessage">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5"
+                                        data-i18n="formSubmit">Enviar Mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <!-- Imagem para ilustração, com descrição em 'alt' para melhor acessibilidade -->
-                <img src="/imagens/envelope.png" alt="Ícone de Envelope" class="icone">
-                
-                <!-- Botão para submeter o formulário-->
-                <input type="submit" value="Enviar">
-            </form>
-            <!-- Link interno para voltar ao topo da página -->
-            <a href="#inicio" class="voltar">Voltar ao Início</a>
-        </section>
-    </main>
-
-    <!-- Rodapé do site, indicando os direitos autorais sobre o conteúdo do site -->
-    <footer>
-        <p>&copy; 2024, Cássio Augusto Couto Soares. Todos os direitos reservados.</p>
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0" data-i18n="footerText">&copy; 2024 Cássio Augusto. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
