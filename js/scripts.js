@@ -42,17 +42,17 @@ const translations = {
     skillsDescription:
       "Combinando conhecimentos jurídicos e tecnológicos para oferecer soluções completas e inovadoras.",
     legalSkills: "Habilidades Jurídicas",
-    legalSkill1: "• Direito Civil e Contratual",
-    legalSkill2: "• Direito do Consumidor",
-    legalSkill3: "• Direito Digital e Proteção de Dados",
-    legalSkill4: "• Consultoria Jurídica Empresarial",
-    legalSkill5: "• Elaboração de Contratos e Documentos Legais",
+    legalSkill1: "• Direito Civil",
+    legalSkill2: "• Direito Trabalhista",
+    legalSkill3: "• Direito Digital",
+    legalSkill4: "• Proteção de Dados",
+    legalSkill5: "• Elaboração e Análise de Contratos",
     techSkills: "Habilidades Técnicas",
     techSkill1: "• HTML, CSS, JavaScript",
     techSkill2: "• Bootstrap e Design Responsivo",
     techSkill3: "• Desenvolvimento Front-end",
-    techSkill4: "• Git e Controle de Versão",
-    techSkill5: "• Análise e Modelagem de Sistemas",
+    techSkill4: "• Python",
+    techSkill5: "• Desenvolvimento e Análise de Sistemas",
     integrationTitle: "Integração Direito e Tecnologia",
     integrationDescription:
       "Minha abordagem única combina conhecimentos jurídicos profundos com expertise em tecnologia para oferecer soluções completas. Desenvolvo sistemas que atendem às necessidades legais específicas de empresas e profissionais, criando ferramentas que otimizam processos jurídicos e garantem conformidade com a legislação.",
@@ -127,17 +127,17 @@ const translations = {
     skillsDescription:
       "Combining legal and technological knowledge to offer complete and innovative solutions.",
     legalSkills: "Legal Skills",
-    legalSkill1: "• Civil and Contract Law",
-    legalSkill2: "• Consumer Law",
-    legalSkill3: "• Digital Law and Data Protection",
-    legalSkill4: "• Business Legal Consulting",
-    legalSkill5: "• Drafting Contracts and Legal Documents",
+    legalSkill1: "• Civil Law",
+    legalSkill2: "• Labor Law",
+    legalSkill3: "• Digital Law",
+    legalSkill4: "• Data Protection",
+    legalSkill5: "• Drafting and Analysis of Contracts",
     techSkills: "Technical Skills",
     techSkill1: "• HTML, CSS, JavaScript",
     techSkill2: "• Bootstrap and Responsive Design",
     techSkill3: "• Front-end Development",
-    techSkill4: "• Git and Version Control",
-    techSkill5: "• Systems Analysis and Modeling",
+    techSkill4: "• Python",
+    techSkill5: "• Systems Development and Analysis",
     integrationTitle: "Law and Technology Integration",
     integrationDescription:
       "My unique approach combines deep legal knowledge with technology expertise to offer complete solutions. I develop systems that meet the specific legal needs of companies and professionals, creating tools that optimize legal processes and ensure compliance with legislation.",
@@ -205,8 +205,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Placeholder message (no real implementation yet)
     alert(
       currentLanguage === "pt"
-        ? "Mensagem enviada com sucesso! Em breve entrarei em contato."
-        : "Message sent successfully! I will contact you soon."
+        ? "Mensagem enviada com sucesso!"
+        : "Message sent successfully!"
     );
     contactForm.reset();
   });
