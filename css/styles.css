@@ -1,6 +1,8 @@
 /* css/styles.css */
 
-/* Custom Variables */
+/* ===== LIGHT MODE ===== */
+
+/* Custom Variables - Light Mode */
 :root {
   --primary-color: #1a3a5f;
   --secondary-color: #2c5530;
@@ -12,29 +14,6 @@
   --border-radius: 8px;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease;
-}
-
-/* Dark Mode Variables */
-[data-bs-theme="dark"] {
-  --light-color: #0a0f1c;
-  --dark-color: #f8f9fa;
-  --text-color: #e9ecef;
-  --text-muted: #a0aec0;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --card-bg: #1a202c;
-  --form-bg: #2d3748;
-}
-
-[data-bs-theme="dark"] body {
-  background: linear-gradient(135deg, #0a0f1c 0%, #1a202c 100%);
-}
-
-[data-bs-theme="dark"] .hero-section {
-  background: linear-gradient(135deg, #1a3a5f 0%, #2d3748 100%);
-}
-
-[data-bs-theme="dark"] .hero-section::before {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.03"><polygon fill="white" points="0,1000 1000,0 1000,1000"/></svg>');
 }
 
 /* General Styles */
@@ -64,16 +43,12 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Navbar */
+/* Navbar - Light Mode */
 .navbar {
   background-color: var(--primary-color) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
   padding: 1rem 0;
-}
-
-[data-bs-theme="dark"] .navbar {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
@@ -104,28 +79,7 @@ body {
   width: 100%;
 }
 
-/* Dark Mode Navbar Styles */
-[data-bs-theme="dark"] .navbar {
-  background-color: #1a202c !important;
-  border-bottom: 1px solid #2d3748;
-}
-
-[data-bs-theme="dark"] .dropdown-menu {
-  background-color: var(--card-bg);
-  border: 1px solid #2d3748;
-}
-
-[data-bs-theme="dark"] .dropdown-item {
-  color: var(--text-color);
-}
-
-[data-bs-theme="dark"] .dropdown-item:hover {
-  background-color: var(--form-bg);
-  color: var(--text-color);
-}
-
-/* Hero Section */
-
+/* Hero Section - Light Mode */
 .hero-section {
   min-height: 90vh;
   background: linear-gradient(135deg, var(--primary-color) 0%, #2c5530 100%);
@@ -143,6 +97,7 @@ body {
   height: 100%;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.05"><polygon fill="white" points="0,1000 1000,0 1000,1000"/></svg>');
   background-size: cover;
+  pointer-events: none; /* Fix: Prevents pseudo-element from blocking clicks */
 }
 
 .profile-image-container {
@@ -163,6 +118,7 @@ body {
   transform: scale(1.02);
 }
 
+/* Hero Section Button Fixes */
 .hero-section .btn {
   position: relative;
   z-index: 10;
@@ -173,11 +129,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero-section::before {
-  pointer-events: none;
-}
-
-/* Cards */
+/* Cards - Light Mode */
 .card {
   transition: var(--transition);
   border-radius: var(--border-radius);
@@ -186,10 +138,6 @@ body {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-}
-
-[data-bs-theme="dark"] .card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }
 
 .icon-container {
@@ -201,7 +149,7 @@ body {
   color: white;
 }
 
-/* Portfolio Cards */
+/* Portfolio Cards - Light Mode */
 .portfolio-card .card-img-container {
   overflow: hidden;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -219,21 +167,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Dark Mode Card Styles */
-[data-bs-theme="dark"] .card {
-  background-color: var(--card-bg);
-  border: 1px solid #2d3748;
-}
-
-[data-bs-theme="dark"] .card .text-muted {
-  color: var(--text-muted) !important;
-}
-
-[data-bs-theme="dark"] .bg-light {
-  background-color: #1a202c !important;
-}
-
-/* Badge Styles */
+/* Badge Styles - Light Mode */
 .badge.bg-accent {
   background-color: var(--accent-color) !important;
   color: white;
@@ -241,14 +175,7 @@ body {
   padding: 0.4rem 0.75rem;
 }
 
-/* Dark Mode Badge Styles */
-[data-bs-theme="dark"] .badge.bg-accent {
-  background-color: var(--accent-color) !important;
-  color: #1a202c;
-  font-weight: 600;
-}
-
-/* Form Styles */
+/* Form Styles - Light Mode */
 .form-control {
   border-radius: var(--border-radius);
   border: 1px solid #dee2e6;
@@ -262,25 +189,7 @@ body {
   border-color: var(--primary-color);
 }
 
-/* Dark Mode Form Styles */
-[data-bs-theme="dark"] .form-control {
-  background-color: var(--form-bg);
-  border-color: #4a5568;
-  color: var(--text-color);
-}
-
-[data-bs-theme="dark"] .form-control:focus {
-  background-color: var(--form-bg);
-  border-color: var(--accent-color);
-  color: var(--text-color);
-  box-shadow: 0 0 0 0.25rem rgba(179, 142, 93, 0.25);
-}
-
-[data-bs-theme="dark"] .form-label {
-  color: var(--text-color);
-}
-
-/* Button Styles */
+/* Button Styles - Light Mode */
 .btn {
   border-radius: var(--border-radius);
   font-weight: 500;
@@ -318,7 +227,118 @@ body {
   padding: 0.5rem 1rem;
 }
 
-/* Dark Mode Button Styles */
+/* Social Links - Light Mode */
+.social-links a {
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.social-links a:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-3px);
+}
+
+/* Footer - Light Mode */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ===== DARK MODE ===== */
+
+/* Dark Mode Variables */
+[data-bs-theme="dark"] {
+  --light-color: #0a0f1c;
+  --dark-color: #f8f9fa;
+  --text-color: #e9ecef;
+  --text-muted: #a0aec0;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --card-bg: #1a202c;
+  --form-bg: #2d3748;
+}
+
+/* Dark Mode Body & Background */
+[data-bs-theme="dark"] body {
+  background: linear-gradient(135deg, #0a0f1c 0%, #1a202c 100%);
+}
+
+/* Dark Mode Hero Section */
+[data-bs-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #1a3a5f 0%, #2d3748 100%);
+}
+
+[data-bs-theme="dark"] .hero-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.03"><polygon fill="white" points="0,1000 1000,0 1000,1000"/></svg>');
+}
+
+[data-bs-theme="dark"] .navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode Navbar */
+[data-bs-theme="dark"] .navbar {
+  background-color: #1a202c !important;
+  border-bottom: 1px solid #2d3748;
+}
+
+[data-bs-theme="dark"] .dropdown-menu {
+  background-color: var(--card-bg);
+  border: 1px solid #2d3748;
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+  color: var(--text-color);
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+  background-color: var(--form-bg);
+  color: var(--text-color);
+}
+
+/* Dark Mode Cards */
+[data-bs-theme="dark"] .card {
+  background-color: var(--card-bg);
+  border: 1px solid #2d3748;
+}
+
+[data-bs-theme="dark"] .card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-bs-theme="dark"] .card .text-muted {
+  color: var(--text-muted) !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: #1a202c !important;
+}
+
+/* Dark Mode Badges */
+[data-bs-theme="dark"] .badge.bg-accent {
+  background-color: var(--accent-color) !important;
+  color: #1a202c;
+  font-weight: 600;
+}
+
+/* Dark Mode Forms */
+[data-bs-theme="dark"] .form-control {
+  background-color: var(--form-bg);
+  border-color: #4a5568;
+  color: var(--text-color);
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+  background-color: var(--form-bg);
+  border-color: var(--accent-color);
+  color: var(--text-color);
+  box-shadow: 0 0 0 0.25rem rgba(179, 142, 93, 0.25);
+}
+
+[data-bs-theme="dark"] .form-label {
+  color: var(--text-color);
+}
+
+/* Dark Mode Buttons */
 [data-bs-theme="dark"] .btn-outline-primary {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -341,28 +361,13 @@ body {
   color: var(--light-color);
 }
 
-/* Social Links */
-.social-links a {
-  transition: var(--transition);
-  display: inline-block;
-}
-
-.social-links a:hover {
-  color: var(--accent-color) !important;
-  transform: translateY(-3px);
-}
-
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-/* Dark Mode Footer Styles */
+/* Dark Mode Footer */
 [data-bs-theme="dark"] footer {
   background-color: #1a202c !important;
   border-top: 1px solid #2d3748;
 }
+
+/* ===== RESPONSIVE STYLES ===== */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -404,6 +409,8 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+/* ===== UTILITY STYLES ===== */
 
 /* Smooth theme transitions */
 .navbar,
