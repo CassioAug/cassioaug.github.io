@@ -11,7 +11,7 @@ const translations = {
     contact: "Contato",
 
     // Hero Section
-    heroTitle: "Advogado & Desenvolvedor de Sistemas",
+    heroTitle: "Advogado e Desenvolvedor de Sistemas",
     heroDescription:
       "Combinando expertise jurídica com tecnologia para oferecer soluções inovadoras e eficientes aos meus clientes.",
     contactMe: "Entre em Contato",
@@ -53,7 +53,7 @@ const translations = {
     techSkill3: "• Desenvolvimento Front-end",
     techSkill4: "• Git e Controle de Versão",
     techSkill5: "• Análise e Modelagem de Sistemas",
-    integrationTitle: "Integração Direito & Tecnologia",
+    integrationTitle: "Integração Direito e Tecnologia",
     integrationDescription:
       "Minha abordagem única combina conhecimentos jurídicos profundos com expertise em tecnologia para oferecer soluções completas. Desenvolvo sistemas que atendem às necessidades legais específicas de empresas e profissionais, criando ferramentas que otimizam processos jurídicos e garantem conformidade com a legislação.",
 
@@ -61,18 +61,15 @@ const translations = {
     portfolioTitle: "Portfólio",
     portfolioDescription:
       "Alguns dos projetos que desenvolvi, demonstrando a integração entre direito e tecnologia.",
-    project1Title: "Sistema de Gestão Jurídica",
-    project1Description:
-      "Aplicação web para gestão de processos jurídicos, prazos e documentos.",
-    project1Tech: "HTML, CSS, JavaScript",
-    project2Title: "Gerador de Contratos Inteligente",
-    project2Description:
-      "Ferramenta para criação automatizada de contratos personalizados.",
-    project2Tech: "JavaScript, Bootstrap",
-    project3Title: "Sistema de Conformidade Legal",
-    project3Description:
-      "Plataforma para verificação de conformidade com a LGPD e outras leis.",
-    project3Tech: "HTML, CSS, JavaScript",
+    project1Title: "Projeto 1",
+    project1Description: "Descrição...",
+    project1Tech: "Tags",
+    project2Title: "Projeto 2",
+    project2Description: "Descrição...",
+    project2Tech: "Tags",
+    project3Title: "Projeto 3",
+    project3Description: "Descrição...",
+    project3Tech: "Tags",
     viewProject: "Ver Projeto",
 
     // Contact Section
@@ -86,8 +83,10 @@ const translations = {
     formSubmit: "Enviar Mensagem",
 
     // Footer
-    footerText: "© 2024 Cássio Augusto. Todos os direitos reservados.",
+    footerText:
+      "© 2025 Cássio Augusto Couto Soares. Todos os direitos reservados.",
   },
+
   en: {
     // Navigation
     home: "Home",
@@ -97,7 +96,7 @@ const translations = {
     contact: "Contact",
 
     // Hero Section
-    heroTitle: "Lawyer & Systems Developer",
+    heroTitle: "Lawyer and Systems Developer",
     heroDescription:
       "Combining legal expertise with technology to deliver innovative and efficient solutions to my clients.",
     contactMe: "Contact Me",
@@ -139,7 +138,7 @@ const translations = {
     techSkill3: "• Front-end Development",
     techSkill4: "• Git and Version Control",
     techSkill5: "• Systems Analysis and Modeling",
-    integrationTitle: "Law & Technology Integration",
+    integrationTitle: "Law and Technology Integration",
     integrationDescription:
       "My unique approach combines deep legal knowledge with technology expertise to offer complete solutions. I develop systems that meet the specific legal needs of companies and professionals, creating tools that optimize legal processes and ensure compliance with legislation.",
 
@@ -171,7 +170,7 @@ const translations = {
     formSubmit: "Send Message",
 
     // Footer
-    footerText: "© 2024 Cássio Augusto. All rights reserved.",
+    footerText: "© 2025 Cássio Augusto Couto Soares. All rights reserved.",
   },
 };
 
@@ -203,8 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contactForm");
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    // In a real implementation, you would send the form data to a server
-    // For now, we'll just show an alert
+    // Placeholder message (no real implementation yet)
     alert(
       currentLanguage === "pt"
         ? "Mensagem enviada com sucesso! Em breve entrarei em contato."
@@ -233,6 +231,11 @@ document.addEventListener("DOMContentLoaded", function () {
           link.classList.remove("active");
         });
         this.classList.add("active");
+
+        // Check if the clicked anchor is a nav-link before adding the active class
+        if (this.classList.contains("nav-link")) {
+          this.classList.add("active");
+        }
       }
     });
   });
