@@ -221,21 +221,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
+        // Calculate the position considering the fixed navbar
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const targetPosition = targetElement.offsetTop - navbarHeight;
+
         window.scrollTo({
-          top: targetElement.offsetTop - 70,
+          top: targetPosition,
           behavior: "smooth",
         });
 
-        // Update active nav link
-        document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
-          link.classList.remove("active");
-        });
-        this.classList.add("active");
-
-        // Check if the clicked anchor is a nav-link before adding the active class
-        if (this.classList.contains("nav-link")) {
-          this.classList.add("active");
-        }
+        // Update URL without page jump
+        history.pushState(null, null, targetId);
       }
     });
   });
@@ -244,11 +240,12 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     let current = "";
     const sections = document.querySelectorAll("section");
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
 
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop - 100) {
+      if (scrollY >= sectionTop - navbarHeight - 50) {
         current = section.getAttribute("id");
       }
     });

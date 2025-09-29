@@ -91,6 +91,7 @@ body {
 }
 
 /* Hero Section */
+
 .hero-section {
   min-height: 90vh;
   background: linear-gradient(135deg, var(--primary-color) 0%, #2c5530 100%);
@@ -126,6 +127,20 @@ body {
 
 .profile-image:hover {
   transform: scale(1.02);
+}
+
+.hero-section .btn {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section::before {
+  pointer-events: none;
 }
 
 /* Cards */
