@@ -61,15 +61,14 @@ const translations = {
     portfolioTitle: "Portfólio",
     portfolioDescription:
       "Alguns dos projetos que desenvolvi, demonstrando a integração entre direito e tecnologia.",
-    project1Title: "Projeto 1",
-    project1Description: "Descrição...",
-    project1Tech: "Tags",
-    project2Title: "Projeto 2",
-    project2Description: "Descrição...",
-    project2Tech: "Tags",
+    project1Title: "Website: Coleta Seletiva",
+    project1Description:
+      "Website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e formulário integrado com Google Forms.",
+    project2Title: "Debian Bundle Manager",
+    project2Description:
+      "Um poderoso script em Bash para automatizar a instalação de conjuntos de software em sistemas baseados em Debian usando APT e Flatpak a partir de um arquivo de texto.",
     project3Title: "Projeto 3",
     project3Description: "Descrição...",
-    project3Tech: "Tags",
     viewProject: "Ver Projeto",
 
     // Contact Section
@@ -146,17 +145,14 @@ const translations = {
     portfolioTitle: "Portfolio",
     portfolioDescription:
       "Some of the projects I've developed, demonstrating the integration between law and technology.",
-    project1Title: "Legal Management System",
+    project1Title: "Website: Selective Waste Collection",
     project1Description:
-      "Web application for managing legal processes, deadlines and documents.",
-    project1Tech: "HTML, CSS, JavaScript",
-    project2Title: "Smart Contract Generator",
-    project2Description: "Tool for automated creation of customized contracts.",
-    project2Tech: "JavaScript, Bootstrap",
-    project3Title: "Legal Compliance System",
-    project3Description:
-      "Platform for verifying compliance with LGPD and other laws.",
-    project3Tech: "HTML, CSS, JavaScript",
+      "Website with a modern, adaptive design using Bootstrap, an interactive map with Leaflet.js, and a form integrated with Google Forms.",
+    project2Title: "Debian Bundle Manager",
+    project2Description:
+      "A powerful Bash script to automate software installation on Debian-based systems using APT and Flatpak from a text file.",
+    project3Title: "Project 3",
+    project3Description: "Description...",
     viewProject: "View Project",
 
     // Contact Section
