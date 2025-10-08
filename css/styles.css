@@ -172,21 +172,30 @@ body {
 }
 
 /* Portfolio Cards - Light Mode */
-.portfolio-card .card-img-container {
-  overflow: hidden;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  height: 200px;
+.portfolio-card .icon-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50% !important;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
 }
 
-.portfolio-card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: var(--transition);
+.portfolio-card .icon-container i {
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
-.portfolio-card:hover img {
-  transform: scale(1.05);
+.portfolio-card .card-title {
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 /* Badge Styles - Light Mode */
@@ -195,6 +204,8 @@ body {
   color: white;
   font-weight: 500;
   padding: 0.4rem 0.75rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
 }
 
 /* Form Styles - Light Mode */
@@ -431,6 +442,13 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+[data-bs-theme="dark"] .portfolio-card .icon-container {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent-color), #d4b17e);
+  color: #1a202c;
+}
+
 /* Accessibility: Dark mode focus states */
 [data-bs-theme="dark"] .btn:focus,
 [data-bs-theme="dark"] .form-control:focus,
@@ -485,6 +503,26 @@ footer {
 
   .navbar-brand {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .col-lg-6:first-child {
+    order: 2;
+  }
+
+  .hero-section .col-lg-6:last-child {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .profile-image-container {
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
