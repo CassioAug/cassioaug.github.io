@@ -236,76 +236,89 @@
     <section id="portfolio" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title mb-4" data-i18n="portfolioTitle">Portfólio</h2>
-                    <p class="text-muted" data-i18n="portfolioDescription">Alguns dos projetos que desenvolvi,
-                        demonstrando a integração entre direito e tecnologia.</p>
-                </div>
-            </div>
-            <div class="row">
+                <!-- Project 1: Coleta Seletiva -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 border-0 shadow-sm portfolio-card">
-                        <div class="card-img-container">
-                            <img src="/imagens/webdev-project.png" class="card-img-top" alt="Descrição da imagem...">
-                        </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="card-title" data-i18n="project1Title">Website: Coleta Seletiva</h5>
-                            <p class="card-text text-muted flex-grow-1" data-i18n="project1Description">Website com
-                                design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e
-                                formulário integrado com Google Forms.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle me-3">
+                                    <i class="fas fa-globe fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="project1Title">Website: Coleta Seletiva</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1" data-i18n="project1Description">
+                                Um website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com
+                                Leaflet.js, e formulário integrado com Google Forms.
+                            </p>
                             <div class="mt-auto">
                                 <span class="badge bg-accent me-2">JavaScript</span>
                                 <span class="badge bg-accent me-2">CSS</span>
                                 <span class="badge bg-accent me-2">Leaflet.js</span>
                                 <div class="mt-3">
                                     <a href="https://cassioaug.github.io/coleta-seletiva-mnmg/" target="_blank"
-                                        class="btn btn-outline-primary btn-sm w-100" data-i18n="viewProject">Ver
-                                        Projeto</a>
+                                        class="btn btn-outline-primary btn-sm w-100" data-i18n="viewProject">
+                                        Ver Projeto
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 2: Debian Bundle Manager -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 border-0 shadow-sm portfolio-card">
-                        <div class="card-img-container">
-                            <img src="imagens/shell-project.png" class="card-img-top" alt="bash logo">
-                        </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="card-title" data-i18n="project2Title">Debian Bundle Manager</h5>
-                            <p class="card-text text-muted flex-grow-1" data-i18n="project2Description">Um poderoso
-                                script Bash para automatizar a instalação de software em sistemas baseados em Debian
-                                usando APT e Flatpak a partir de um arquivo de texto.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle me-3">
+                                    <i class="fas fa-terminal fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="project2Title">Debian Bundle Manager</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1" data-i18n="project2Description">
+                                Um poderoso script Bash para automatizar a instalação de software em sistemas baseados
+                                em Debian usando APT e Flatpak a partir de um arquivo de texto.
+                            </p>
                             <div class="mt-auto">
                                 <span class="badge bg-accent me-2">Bash</span>
                                 <span class="badge bg-accent me-2">Linux</span>
                                 <span class="badge bg-accent me-2">Script</span>
                                 <div class="mt-3">
                                     <a href="https://github.com/CassioAug/debian-bundle-manager" target="_blank"
-                                        class="btn btn-outline-primary btn-sm w-100" data-i18n="viewProject">Ver
-                                        Projeto</a>
+                                        class="btn btn-outline-primary btn-sm w-100" data-i18n="viewProject">
+                                        Ver Projeto
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3: JudInfo -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 border-0 shadow-sm portfolio-card">
-                        <div class="card-img-container">
-                            <img src="imagem-projeto" class="card-img-top" alt="Descrição da imagem...">
-                        </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="card-title" data-i18n="project3Title">Sistema de Conformidade Legal</h5>
-                            <p class="card-text text-muted flex-grow-1" data-i18n="project3Description">Plataforma para
-                                verificação de conformidade com a LGPD e outras leis.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-container rounded-circle me-3">
+                                    <i class="fab fa-python fa-lg"></i>
+                                </div>
+                                <h5 class="card-title mb-0" data-i18n="project3Title">JudInfo - CNJ DataJud CLI</h5>
+                            </div>
+                            <p class="card-text text-muted flex-grow-1" data-i18n="project3Description">
+                                Uma ferramenta de linha de comando intuitiva, desenvolvida em Python para interagir com
+                                a API DataJud do Conselho Nacional de Justiça (CNJ). Projetada para advogados,
+                                desenvolvedores e analistas, com o objetivo de automatizar e simplificar o acesso a
+                                dados judiciais públicos.
+                            </p>
                             <div class="mt-auto">
-                                <span class="badge bg-accent me-2">HTML</span>
-                                <span class="badge bg-accent me-2">CSS</span>
-                                <span class="badge bg-accent me-2">JavaScript</span>
+                                <span class="badge bg-accent me-2">Python</span>
+                                <span class="badge bg-accent me-2">Automation</span>
+                                <span class="badge bg-accent me-2">API</span>
                                 <div class="mt-3">
-                                    <a href="#" target="_blank" class="btn btn-outline-primary btn-sm w-100"
-                                        data-i18n="viewProject">Ver
-                                        Projeto</a>
+                                    <a href="https://github.com/CassioAug/judinfo" target="_blank"
+                                        class="btn btn-outline-primary btn-sm w-100" data-i18n="viewProject">
+                                        Ver Projeto
+                                    </a>
                                 </div>
                             </div>
                         </div>

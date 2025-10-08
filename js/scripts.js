@@ -63,12 +63,13 @@ const translations = {
       "Alguns dos projetos que desenvolvi, demonstrando a integração entre direito e tecnologia.",
     project1Title: "Website: Coleta Seletiva",
     project1Description:
-      "Website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e formulário integrado com Google Forms.",
+      "Um website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e formulário integrado com Google Forms.",
     project2Title: "Debian Bundle Manager",
     project2Description:
       "Um poderoso script em Bash para automatizar a instalação de conjuntos de software em sistemas baseados em Debian usando APT e Flatpak a partir de um arquivo de texto.",
-    project3Title: "Projeto 3",
-    project3Description: "Descrição...",
+    project3Title: "JudInfo",
+    project3Description:
+      "Uma ferramenta de linha de comando intuitiva, desenvolvida em Python para interagir com a API DataJud do Conselho Nacional de Justiça (CNJ). Projetada para advogados, desenvolvedores e analistas, com o objetivo de automatizar e simplificar o acesso a dados judiciais públicos.",
     viewProject: "Ver Projeto",
 
     // Contact Section
@@ -151,8 +152,9 @@ const translations = {
     project2Title: "Debian Bundle Manager",
     project2Description:
       "A powerful Bash script to automate software installation on Debian-based systems using APT and Flatpak from a text file.",
-    project3Title: "Project 3",
-    project3Description: "Description...",
+    project3Title: "JudInfo",
+    project3Description:
+      " A user-friendly command-line tool built with Python to interact with Brazil's National Council of Justice (CNJ) DataJud API. Designed for lawyers, developers, and analysts to automate and simplify access to public judicial data.",
     viewProject: "View Project",
 
     // Contact Section
