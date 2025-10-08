@@ -11,56 +11,59 @@ const translations = {
     contact: "Contato",
 
     // Hero Section
-    heroTitle: "Advogado e Desenvolvedor de Sistemas",
+    heroTitle:
+      "Advogado Especialista em Tecnologia e Desenvolvedor de Sistemas",
     heroDescription:
-      "Combinando expertise jurídica com tecnologia para oferecer soluções inovadoras e eficientes aos meus clientes.",
+      "Unindo a precisão do Direito com a inovação da Tecnologia para construir soluções estratégicas e eficientes.",
     contactMe: "Entre em Contato",
-    viewPortfolio: "Ver Portfólio",
+    viewPortfolio: "Conheça meus Projetos",
 
     // About Section
     aboutTitle: "Sobre Mim",
     aboutDescription:
-      "Advogado e desenvolvedor de sistemas com experiência em ambas as áreas, buscando integrar tecnologia e direito para criar soluções eficientes.",
+      "Com uma carreira em Direito e Desenvolvimento de Sistemas, minha paixão é criar soluções tecnológicas que resolvem desafios jurídicos e de negócios.",
     educationTitle: "Formação Acadêmica",
     degree1: "Análise e Desenvolvimento de Sistemas",
     degree1Desc: "Centro Universitário Internacional - UNINTER (Cursando)",
     degree2: "Direito",
-    degree2Desc: "Centro Universitário Newton Paiva",
+    degree2Desc: "Centro Universitário Newton Paiva (Concluído)",
     degree3: "Técnico em Informática",
-    degree3Desc: "Colégio Cotemig",
+    degree3Desc: "Colégio Cotemig (Concluído)",
     experienceTitle: "Experiência Profissional",
     job1: "Advogado Autônomo",
     job1Desc:
-      "Atuação em diversas áreas do direito, com foco em soluções personalizadas",
-    job2: "Técnico de Informática",
-    job2Desc: "Suporte técnico, manutenção de sistemas e infraestrutura de TI",
-    job3: "Desenvolvedor de Sistemas",
-    job3Desc: "Desenvolvimento de aplicações web e mobile",
+      "Consultoria e atuação em Direito Digital, Civil e Trabalhista com foco em soluções personalizadas para startups e empresas de tecnologia.",
+    job2: "Desenvolvedor de Sistemas",
+    job2Desc:
+      "Desenvolvimento de aplicações web e automação de processos, integrando tecnologia à rotina de negócios.",
+    job3: "Técnico de Informática",
+    job3Desc:
+      "Experiência consolidada em suporte técnico, manutenção de sistemas e infraestrutura de TI.",
 
     // Skills Section
     skillsTitle: "Minhas Habilidades",
     skillsDescription:
-      "Combinando conhecimentos jurídicos e tecnológicos para oferecer soluções completas e inovadoras.",
+      "Minha expertise abrange tanto o universo jurídico quanto o tecnológico, permitindo-me criar soluções verdadeiramente completas.",
     legalSkills: "Habilidades Jurídicas",
-    legalSkill1: "• Direito Civil",
-    legalSkill2: "• Direito Trabalhista",
-    legalSkill3: "• Direito Digital",
-    legalSkill4: "• Proteção de Dados",
-    legalSkill5: "• Elaboração e Análise de Contratos",
+    legalSkill1: "• Direito Digital e LGPD",
+    legalSkill2: "• Análise e Elaboração de Contratos (Tech Contracts)",
+    legalSkill3: "• Direito Civil e Resolução de Disputas",
+    legalSkill4: "• Direito Trabalhista e Relações de Trabalho",
+    legalSkill5: "• Propriedade Intelectual de Software",
     techSkills: "Habilidades Técnicas",
-    techSkill1: "• HTML, CSS, JavaScript",
-    techSkill2: "• Bootstrap e Design Responsivo",
-    techSkill3: "• Desenvolvimento Front-end",
-    techSkill4: "• Python",
-    techSkill5: "• Desenvolvimento e Análise de Sistemas",
-    integrationTitle: "Integração Direito e Tecnologia",
+    techSkill1: "• Front-End: HTML, CSS, JavaScript",
+    techSkill2: "• Frameworks: Bootstrap e Design Responsivo",
+    techSkill3: "• Back-End: Python e Automação de Scripts",
+    techSkill4: "• Análise de Requisitos e Modelagem de Sistemas",
+    techSkill5: "• APIs e Integração de Sistemas",
+    integrationTitle: "A Interseção entre Direito e Tecnologia",
     integrationDescription:
-      "Minha abordagem única combina conhecimentos jurídicos profundos com expertise em tecnologia para oferecer soluções completas. Desenvolvo sistemas que atendem às necessidades legais específicas de empresas e profissionais, criando ferramentas que otimizam processos jurídicos e garantem conformidade com a legislação.",
+      "Minha abordagem única me permite não apenas entender as complexidades legais, mas também construir as ferramentas para navegá-las. Desenvolvo sistemas que otimizam processos, garantem conformidade (compliance) e transformam desafios jurídicos em vantagens competitivas.",
 
     // Portfolio Section
-    portfolioTitle: "Portfólio",
+    portfolioTitle: "Portfólio de Projetos",
     portfolioDescription:
-      "Alguns dos projetos que desenvolvi, demonstrando a integração entre direito e tecnologia.",
+      "Explore alguns dos projetos que desenvolvi, onde a sinergia entre o conhecimento jurídico e a tecnologia se torna tangível.",
     project1Title: "Website: Coleta Seletiva",
     project1Description:
       "Um website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e formulário integrado com Google Forms.",
@@ -73,13 +76,13 @@ const translations = {
     viewProject: "Ver Projeto",
 
     // Contact Section
-    contactTitle: "Entre em Contato",
+    contactTitle: "Vamos Conversar",
     contactDescription:
-      "Estou disponível para novos projetos e oportunidades. Entre em contato para conversarmos!",
-    formName: "Nome",
-    formEmail: "E-mail",
+      "Estou sempre aberto a novos desafios e oportunidades. Se você tem um projeto em mente ou gostaria de saber mais, entre em contato!",
+    formName: "Seu Nome",
+    formEmail: "Seu E-mail",
     formSubject: "Assunto",
-    formMessage: "Mensagem",
+    formMessage: "Sua Mensagem",
     formSubmit: "Enviar Mensagem",
 
     // Footer
@@ -98,54 +101,56 @@ const translations = {
     // Hero Section
     heroTitle: "Lawyer and Systems Developer",
     heroDescription:
-      "Combining legal expertise with technology to deliver innovative and efficient solutions to my clients.",
-    contactMe: "Contact Me",
-    viewPortfolio: "View Portfolio",
+      "Fusing legal precision with technological innovation to build strategic and efficient solutions.",
+    contactMe: "Get in Touch",
+    viewPortfolio: "View My Projects",
 
     // About Section
     aboutTitle: "About Me",
     aboutDescription:
-      "Lawyer and systems developer with experience in both fields, seeking to integrate technology and law to create efficient solutions.",
-    educationTitle: "Academic Education",
+      "With career in Law and Systems Development, my passion is creating tech-driven solutions to solve complex legal and business challenges.",
+    educationTitle: "Academic Background",
     degree1: "Systems Analysis and Development",
     degree1Desc: "International University Center - UNINTER (In Progress)",
-    degree2: "Law",
-    degree2Desc: "Newton Paiva University Center",
+    degree2: "Bachelor of Laws (LL.B.)",
+    degree2Desc: "Newton Paiva University Center (Completed)",
     degree3: "IT Technician",
-    degree3Desc: "Cotemig College",
+    degree3Desc: "Cotemig College (Completed)",
     experienceTitle: "Professional Experience",
     job1: "Independent Lawyer",
     job1Desc:
-      "Practice in various areas of law, focusing on customized solutions",
-    job2: "IT Technician",
-    job2Desc: "Technical support, system maintenance and IT infrastructure",
-    job3: "Systems Developer",
-    job3Desc: "Web and mobile application development",
+      "Consulting and practice in Digital, Civil, and Labor Law, with a focus on tailored solutions for startups and tech companies.",
+    job2: "Systems Developer",
+    job2Desc:
+      "Developing web applications and process automation, integrating technology into business workflows.",
+    job3: "IT Technician",
+    job3Desc:
+      "Consolidated experience in technical support, system maintenance, and IT infrastructure.",
 
     // Skills Section
     skillsTitle: "My Skills",
     skillsDescription:
-      "Combining legal and technological knowledge to offer complete and innovative solutions.",
+      "My expertise spans both the legal and technological domains, allowing me to create truly comprehensive solutions.",
     legalSkills: "Legal Skills",
-    legalSkill1: "• Civil Law",
-    legalSkill2: "• Labor Law",
-    legalSkill3: "• Digital Law",
-    legalSkill4: "• Data Protection",
-    legalSkill5: "• Drafting and Analysis of Contracts",
+    legalSkill1: "• Digital Law & Data Privacy (LGPD/GDPR)",
+    legalSkill2: "• Tech Contract Drafting and Analysis",
+    legalSkill3: "• Civil Law & Dispute Resolution",
+    legalSkill4: "• Labor Law & Employment Relations",
+    legalSkill5: "• Software Intellectual Property",
     techSkills: "Technical Skills",
-    techSkill1: "• HTML, CSS, JavaScript",
-    techSkill2: "• Bootstrap and Responsive Design",
-    techSkill3: "• Front-end Development",
-    techSkill4: "• Python",
-    techSkill5: "• Systems Development and Analysis",
-    integrationTitle: "Law and Technology Integration",
+    techSkill1: "• Front-End: HTML, CSS, JavaScript",
+    techSkill2: "• Frameworks: Bootstrap & Responsive Design",
+    techSkill3: "• Back-End: Python & Scripting Automation",
+    techSkill4: "• Requirements Analysis & Systems Modeling",
+    techSkill5: "• APIs & Systems Integration",
+    integrationTitle: "The Intersection of Law and Technology",
     integrationDescription:
-      "My unique approach combines deep legal knowledge with technology expertise to offer complete solutions. I develop systems that meet the specific legal needs of companies and professionals, creating tools that optimize legal processes and ensure compliance with legislation.",
+      "My unique approach allows me not just to understand legal complexities, but also to build the tools to navigate them. I develop systems that optimize processes, ensure compliance, and turn legal challenges into competitive advantages.",
 
     // Portfolio Section
-    portfolioTitle: "Portfolio",
+    portfolioTitle: "Project Portfolio",
     portfolioDescription:
-      "Some of the projects I've developed, demonstrating the integration between law and technology.",
+      "Explore some of the projects I've developed, where the synergy between legal knowledge and technology becomes tangible.",
     project1Title: "Website: Selective Waste Collection",
     project1Description:
       "Website with a modern, adaptive design using Bootstrap, an interactive map with Leaflet.js, and a form integrated with Google Forms.",
@@ -158,13 +163,13 @@ const translations = {
     viewProject: "View Project",
 
     // Contact Section
-    contactTitle: "Get in Touch",
+    contactTitle: "Let's Talk",
     contactDescription:
-      "I'm available for new projects and opportunities. Get in touch to talk!",
-    formName: "Name",
-    formEmail: "Email",
+      "I'm always open to new challenges and opportunities. If you have a project in mind or would like to learn more, feel free to reach out!",
+    formName: "Your Name",
+    formEmail: "Your Email",
     formSubject: "Subject",
-    formMessage: "Message",
+    formMessage: "Your Message",
     formSubmit: "Send Message",
 
     // Footer
