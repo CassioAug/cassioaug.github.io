@@ -64,9 +64,9 @@ const translations = {
     portfolioTitle: "Portfólio de Projetos",
     portfolioDescription:
       "Explore alguns dos projetos que desenvolvi, onde a sinergia entre o conhecimento jurídico e a tecnologia se torna tangível.",
-    project1Title: "Website: Coleta Seletiva",
+    project1Title: "Web App Relatório de NFe",
     project1Description:
-      "Um website com design moderno e adaptativo utilizando Bootstrap, mapa interativo com Leaflet.js, e formulário integrado com Google Forms.",
+      "Aplicação web para a extração de dados de arquivos XML de Nota Fiscal Eletrônica (NF-e), por meio de uma tabela interativa, permitindo a geração de relatórios consolidados e exportação em CSV.",
     project2Title: "Debian Bundle Manager",
     project2Description:
       "Um poderoso script em Bash para automatizar a instalação de conjuntos de software em sistemas baseados em Debian usando APT e Flatpak a partir de um arquivo de texto.",
@@ -151,9 +151,9 @@ const translations = {
     portfolioTitle: "Project Portfolio",
     portfolioDescription:
       "Explore some of the projects I've developed, where the synergy between legal knowledge and technology becomes tangible.",
-    project1Title: "Website: Selective Waste Collection",
+    project1Title: "Web App Relatório de NFe",
     project1Description:
-      "Website with a modern, adaptive design using Bootstrap, an interactive map with Leaflet.js, and a form integrated with Google Forms.",
+      "Web application for extracting data from XML files of Brazilian Electronic Invoices (NF-e), through an interactive table, allowing the generation of consolidated reports and export in CSV format.",
     project2Title: "Debian Bundle Manager",
     project2Description:
       "A powerful Bash script to automate software installation on Debian-based systems using APT and Flatpak from a text file.",
