@@ -151,7 +151,7 @@ const translations = {
     portfolioTitle: "Project Portfolio",
     portfolioDescription:
       "Explore some of the projects I've developed, where the synergy between legal knowledge and technology becomes tangible.",
-    project1Title: "Web App Relatório de NFe",
+    project1Title: "Invoice Report Web App",
     project1Description:
       "Web application for extracting data from XML files of Brazilian Electronic Invoices (NF-e), through an interactive table, allowing the generation of consolidated reports and export in CSV format.",
     project2Title: "Debian Bundle Manager",
